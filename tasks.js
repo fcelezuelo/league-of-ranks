@@ -1,5 +1,7 @@
 const axios = require('axios');
-const key = require('./key')
+require('dotenv').config()
+
+const key = process.env.KEY;
 
 module.exports = tasks = {
     ping() {
