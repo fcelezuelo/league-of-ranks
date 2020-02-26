@@ -3,8 +3,8 @@ const app = express();
 
 app.use('/', require('./routes'));
 
-app.listen(8080, () => {
-  console.log('listening at 8080');
+app.listen(process.env.PORT, () => {
+  console.log(`listening at ${process.env.PORT}`);
 });
 
 module.exports = app;
